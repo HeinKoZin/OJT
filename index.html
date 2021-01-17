@@ -11,24 +11,31 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <title>Test Home Page</title>
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
     <script>
         $(document).ready(function () {
             $(".next-arrow").click(function () {
-            // $('#for-nav:nth-child(4)').css( "display", "block");
-            // $('#navbarNavAltMarkup').hide();
-            // $('#navbarNavAltMarkup')
-            $($(".nav-same-id")[0]).hide();
-            $($(".nav-same-id")[1]).show();
+                // $('#for-nav:nth-child(4)').css( "display", "block");
+                // $('#navbarNavAltMarkup').hide();
+                // $('#navbarNavAltMarkup')
+                $($(".nav-same-id")[0]).hide();
+                $($(".nav-same-id")[1]).show();
             });
             $(".back-cross").click(function () {
-            // $('#for-nav:nth-child(4)').css( "display", "block");
-            // $('#navbarNavAltMarkup').hide();
-            // $('#navbarNavAltMarkup')
-            $($(".nav-same-id")[0]).show();
-            $($(".nav-same-id")[1]).hide();
+                // $('#for-nav:nth-child(4)').css( "display", "block");
+                // $('#navbarNavAltMarkup').hide();
+                // $('#navbarNavAltMarkup')
+                $($(".nav-same-id")[0]).show();
+                $($(".nav-same-id")[1]).hide();
             });
         });
     </script>
@@ -45,7 +52,7 @@
                 aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse animate__animated animate__fadeInRight nav-same-id"
+            <div class="collapse col-md-12 navbar-collapse animate__animated animate__fadeInRight nav-same-id"
                 id="navbarNavAltMarkup">
 
                 <div class="nav-mobile-container" style="width: 100%; float: right; height: 550px;">
@@ -153,7 +160,7 @@
                 </div>
             </div>
 
-            <div class="collapse navbar-collapse animate__animated animate__fadeInRight nav-same-id
+            <div class="collapse col-md-12 navbar-collapse animate__animated animate__fadeInRight nav-same-id"
                 id="navbarNavAltMarkup">
 
                 <div class="nav-mobile-container" style="width: 100%; float: right; height: 550px;">
@@ -162,7 +169,7 @@
                         <div class="back-cross">
                             <i class="fas fa-times"></i>
                         </div>
-                       
+
                     </div>
                     <div class="col-md-12"
                         style="padding: 10px; height:50px; border: 1px solid rgb(192, 174, 174); align-items: center; display: flex; justify-content: space-between;">
@@ -170,7 +177,7 @@
                             <h6>Testing-1
                             </h6>
                         </div>
-                        
+
                     </div>
                     <div class="col-md-12"
                         style="padding: 10px; height:50px; border: 1px solid rgb(192, 174, 174); align-items: center; display: flex; justify-content: space-between;">
@@ -178,7 +185,7 @@
                             <h6>Testing-1
                             </h6>
                         </div>
-                        
+
                     </div>
                     <div class="col-md-12"
                         style="padding: 10px; height:50px; border: 1px solid rgb(192, 174, 174); align-items: center; display: flex; justify-content: space-between;">
@@ -186,7 +193,7 @@
                             <h6>Testing-1
                             </h6>
                         </div>
-                        
+
                     </div>
                     <div class="col-md-12"
                         style="padding: 10px; height:50px; border: 1px solid rgb(192, 174, 174); align-items: center; display: flex; justify-content: space-between;">
@@ -194,7 +201,7 @@
                             <h6>Testing-1
                             </h6>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -621,10 +628,10 @@
                     <div class="col-md-5 forex-plan-left ripple" data-mdb-ripple-color="info">
                         <div class="col-md-12 forex-plan-top" style="display: flex; justify-content: left; ;">
                             <div class="col-md-1 forex-plan-top-left"
-                                style="background-image: url('reveunue.png'); margin: 15px; background-position: center; background-repeat: no-repeat; height: 45px;">
+                                style="background-image: url('reveunue.png'); margin: 15px; background-position: center; background-size: cover; height: 45px;">
                             </div>
                             <div class="col-md-6 forex-plan-top-right">
-                                <span class="forex-plan-top-right-span">Revenue Share</span>
+                                <span>Revenue Share</span>
                             </div>
                         </div>
                         <div class="col-md-12" style="background-color: #c4c4c4; padding: 10px; text-align: left;">
@@ -645,10 +652,10 @@
                     <div class="col-md-5 forex-plan-right ripple" data-mdb-ripple-color="info">
                         <div class="col-md-12 forex-plan-top" style="display: flex; justify-content: left; ;">
                             <div class="col-md-1 forex-plan-top-left"
-                                style="background-image: url('cps.png'); margin: 15px; background-position: center; background-repeat: no-repeat; height: 45px;">
+                                style="background-image: url('cps.png'); margin: 15px; background-position: center; background-size: cover; height: 45px;">
                             </div>
-                            <div class="col-md-6 forex-plan-top-right">
-                                <span class="forex-plan-top-right-span">CPS</span>
+                            <div class="col-md-6 forex-plan-top-right" style="text-align: left;">
+                                <span>CPS</span>
                             </div>
                         </div>
                         <div class="col-md-12" style="background-color: #c4c4c4; padding: 10px; text-align: left;">
@@ -666,13 +673,14 @@
                     </div>
                 </div>
             </div>
+            
             <div class="col-md-11 forex-plan-bottom ripple" data-mdb-ripple-color="info">
-                <div class="col-md-12 forex-plan-top" style="display: flex; justify-content: left;">
+                <div class="col-md-12" style="display: flex; justify-content: left;">
                     <div class="col-md-1 forex-plan-top-left"
                         style="background-image: url('flag.png'); margin: 15px; background-position: center; background-repeat: no-repeat; height: 40px;">
                     </div>
-                    <div class="col-md-6 forex-plan-top-right">
-                        <span>ဒေသခံ ကိုယ်စားလှယ်</span>
+                    <div class="col-md-6 forex-plan-top-right" style="text-align: left;">
+                        <span style="font-size: 35px; font-weight: 500; color: black">ဒေသခံ ကိုယ်စားလှယ်</span>
                     </div>
                 </div>
                 <div class="col-md-12" style="background-color: #c4c4c4; padding: 10px; text-align: left;">
@@ -684,75 +692,235 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 forex-footer-top">
-                <div class="col-md-11 forex-footer-top-text-box">
-                    <p>“သတိပေးချက်: ဘဏ္ဍာရေးဈေးကွက်ပေါ် ကုန်သွယ်ခြင်းသည် စွန့်စားမှုများ
-                        ပါဝင်ပါသည်။ ခြားနားချက်များအပေါ် ချုပ်ဆိုသည့် စာချုပ်များ Contracts for Difference (‘CFDs’)သည်
-                        မာဂျင်လိုင်းပေါ် ကုန်သွယ်သည့် ရှုပ်ထွေးသည့် ဘဏ္ဍာရေးကုန်ပစ္စည်းများဖြစ်ပါသည်။ အကြွေးယူခြင်းသည်
-                        ကောင်းကျိုး ဆိုးကျိုး ၂မျိုးလုံးဖြစ်စေနိုင်သောကြောင့် CFDs ကုန်သွယ်မှုသည်
-                        စွန့်စားမှုရှိစေနိုင်ပါသည်။ ရလာဒ်အားဖြင့် CFDs သည် ရင်းနှီးမြုပ်နှံ
-                        ငွေများဆုံးရှုံးရနိုင်ခြင်းကြောင့် ရင်းနှီးမြုပ်နှံသူများအတွက် သင့်လျော်မှုမရှိနိုင်ပါ။
-                        သို့ဖြစ်ရာ ဆုံးရှုံးနိုင်မည့်ရလဒ်ထက်ပို၍ ရင်းနှီးမြှုပ်နှံခြင်း မပြုလုပ်သင့်ပါ။ ထို့ကြောင့်
-                        ကုန်သွယ်မှုပြုလုပ်ရန် ဖြစ်လာနိုင်မည့် စွန့်စားမှုများ၊ ရင်းနှီးမြုပ်နှံမည့် ရည်ရွယ်ချက်နှင့်
-                        မိမိ၏ အတွေ့အကြုံ များ အားသေချာစွာသိရှိနားလည်ပြီးမှ ဆောင်ရွက်ရန်ဆုံးဖြတ်သင့်ပါသည်။
-                        ဤနေရာတွင်နှိပ်ပါ ဖြစ်လာနိုင်မည့် စွန့်စားမှု သဘောတူညီချက်များအား အသေးစိတ်ဖတ်ရှုရန်"</p>
-                </div>
-            </div>
-            <div class="col-md-12 forex-footer-bottom">
-                <div class="row">
-                    <div class="col-md-12 forex-footer-bottom-nav">
-                        <div class="col-md-10">
-                            <!-- <div class="col-md-1">
-
-                            </div> -->
-                            <dvi class="col-md-2">
-                                <span>စည်းကမ်းနှင့်သတ်မှတ်ချက်များ</span>
-                            </dvi>
-                            <dvi class="col-md-2">
-                                <span>ကိုယ်ရေးလျှို့ဝှက်ပေါ်လစီ</span>
-                            </dvi>
-                            <dvi class="col-md-2">
-                                <span>စွန့်စားမှု ထုတ်ဖော်ချက်</span>
-                            </dvi>
-                            <dvi class="col-md-2">
-                                <span>AML/KYC ပေါ်လစီ</span>
-                            </dvi>
-                            <dvi class="col-md-1">
-                                <span>တုံ့ပြန်ချက်</span>
-                            </dvi>
-                            <dvi class="col-md-2">
-
-                            </dvi>
-                        </div>
-                    </div>
-                </div><br>
-                <div class="row">
-                    <dvi class="col-md-11" style="text-align: left; margin: auto; height: 300px">
-                        <h6>ယခု ဝဘ်ဆိုဒ်ကို Liteforex ကုမ္ပဏီအုပ်စုမှ ပိုင်ဆိုင်သည်။ </h6><br>
-                        <h6>LiteForex ရင်းနှီးမြှုပ်နှံမှု လီမိတက်ကို Marshall ကျွန်းစုများ (ကုမ္ပဏီမှတ်ပုံတင်နံပါတ်
-                            63888) ကို Marshall ကျွန်းစုများ စီးပွားရေး ကော်ပိုရေးရှင်းအက်ဥပဒေနှင့်အညီ ကုမ္ပဏီ
-                            မှတ်ပုံတင်ထားပါသည်။ ကုမ္ပဏီ၏ လိပ်စာမှာ - Ajeltake Road, Ajeltake Island, Majuro, Marshall
-                            Islands MH96960 ဖြစ်ပါသည်။ Email: </h6>
-                        <br>
-                        <h6>Liteforex ရင်းနှီးမြှုပ်နှံမှု လီမိတက်သည် EEA နိုင်ငံများ၊ အမေရိကန် ပြည်ထောင်စု၊
-                            အစ္စရေးနှင့် ဂျပန်နိုင်ငံအတွင်း နေထိုင်သူများအတွက် ဝန်ဆောင်မှု ပေးအပ်ခြင်း မပြုပါ။ </h6>
-                        <br>
-                        <h6>Copyright © 2005-2021 LiteForex.com</h6>
-                    </dvi>
-                </div>
-
-
-
-            </div>
         </div>
+
+        <footer id="dk-footer" class="dk-footer">
+            <div class="container dk-footer-container">
+                <!-- <div class="row" style="border: 1px solid red; width: 40%;"></div> -->
+                <div class="col-md-12 col-lg-4 dk-footer-top">
+                    <div class="col-md-3 dk-footer-box-info">
+                        <a href="index.html" class="footer-logo">
+                            <img src="images/footer_logo.png" alt="footer_logo" class="img-fluid">
+                        </a>
+                        <p class="footer-info-text">
+                            Reference site about Lorem Ipsum, giving information on its origins, as well as a random
+                            Lipsum generator.
+                        </p>
+                        <div class="footer-social-link">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+                    <!-- End Footer info -->
+                    <div class="footer-awarad">
+                        <img src="images/icon/best.png" alt="">
+                        <p>Best Design Company 2019</p>
+                    </div>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-8 col-lg-8 dk-footer-bottom">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>Jaipur India</h3>
+                                    <p>5353 Road Avenue</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>95 711 9 5353</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 footer-left-widget">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        <div class="col-md-12 col-lg-6 footer-right-widget">
+                            <div class="footer-widget">
+                                <div class="section-heading-2">
+                                    <h3>Subscribe</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <p>
+                                    <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                                    Reference site about Lorem Ipsum, giving information on its origins, as well.
+                                </p>
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                                <i class="fa fa-send"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- End form -->
+                            </div>
+                            <!-- End footer widget -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+                <!-- </div> -->
+                <!-- End Widget Row -->
+            </div>
+            <!-- End Contact Container -->
+
+
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 copyright-bottom-left">
+                            <span>Copyright © 2019, All Right Reserved Seobin</span>
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6 copyright-bottom-right">
+                            <div class="copyright-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Copyright Container -->
+            </div>
+            <!-- End Copyright -->
+            <!-- Back to top -->
+            <div id="back-to-top" class="back-to-top">
+                <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                    <i class="fa fa-angle-up"></i>
+                </button>
+            </div>
+            <!-- End Back to top -->
+        </footer>
+<!-- <div style="border: 1px solid red; height: 400px"> -->
+        
+
     </div>
+    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
-<!-- MDB -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"></script>
+
 
 </html>
 
 <style>
+    .dk-footer-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .dk-footer-box-info {
+        width: 30%;
+        height: 300px;
+    }
+
+
     .nav-appear {
         display: block;
     }
@@ -1010,9 +1178,10 @@
     }
 
     .forex-plan {
-        height: 600px;
+        height: 700px;
         margin: auto;
         text-align: center;
+        /* border: 1px solid green; */
     }
 
     .forex-plan-inner {
@@ -1024,13 +1193,13 @@
     }
 
     .forex-plan-left {
-        height: 220px;
+        height: 230px;
         margin-right: 50px;
         border: 1px solid rgb(170, 165, 165);
     }
 
     .forex-plan-right {
-        height: 220px;
+        height: 230px;
         margin-left: 50px;
         border: 1px solid rgb(170, 165, 165);
     }
@@ -1067,8 +1236,450 @@
         display: none;
     }
 
+    .footer-widget p {
+        margin-bottom: 27px;
+    }
+
+    p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .animate-border {
+        position: relative;
+        display: block;
+        width: 115px;
+        height: 3px;
+        background: #007bff;
+    }
+
+    .animate-border:after {
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        border-left: 10px solid #fff;
+        border-right: 10px solid #fff;
+        -webkit-animation: animborder 2s linear infinite;
+        animation: animborder 2s linear infinite;
+    }
+
+    @-webkit-keyframes animborder {
+        0% {
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+        }
+
+        100% {
+            -webkit-transform: translateX(113px);
+            transform: translateX(113px);
+        }
+    }
+
+    @keyframes animborder {
+        0% {
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+        }
+
+        100% {
+            -webkit-transform: translateX(113px);
+            transform: translateX(113px);
+        }
+    }
+
+    .animate-border.border-white:after {
+        border-color: #fff;
+    }
+
+    .animate-border.border-yellow:after {
+        border-color: #F5B02E;
+    }
+
+    .animate-border.border-orange:after {
+        border-right-color: #007bff;
+        border-left-color: #007bff;
+    }
+
+    .animate-border.border-ash:after {
+        border-right-color: #EEF0EF;
+        border-left-color: #EEF0EF;
+    }
+
+    .animate-border.border-offwhite:after {
+        border-right-color: #F7F9F8;
+        border-left-color: #F7F9F8;
+    }
+
+    /* Animated heading border */
+    @keyframes primary-short {
+        0% {
+            width: 15%;
+        }
+
+        50% {
+            width: 90%;
+        }
+
+        100% {
+            width: 10%;
+        }
+    }
+
+    @keyframes primary-long {
+        0% {
+            width: 80%;
+        }
+
+        50% {
+            width: 0%;
+        }
+
+        100% {
+            width: 80%;
+        }
+    }
+
+    .dk-footer {
+        padding: 75px 0 0;
+        background-color: #151414;
+        position: relative;
+        z-index: 2;
+    }
+
+    .dk-footer .contact-us {
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding-left: 80px;
+    }
+
+    .dk-footer .contact-us .contact-info {
+        margin-left: 50px;
+    }
+
+    .dk-footer .contact-us.contact-us-last {
+        margin-left: -80px;
+    }
+
+    .dk-footer .contact-icon i {
+        font-size: 24px;
+        top: -15px;
+        position: relative;
+        color: #007bff;
+    }
+
+    .dk-footer-box-info {
+        position: absolute;
+        /* top: -122px; */
+        background: #202020;
+        padding: 40px;
+        z-index: 2;
+    }
+
+    .dk-footer-box-info .footer-social-link h3 {
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .dk-footer-box-info .footer-social-link ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dk-footer-box-info .footer-social-link li {
+        display: inline-block;
+    }
+
+    .dk-footer-box-info .footer-social-link a i {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        background: #000;
+        margin-right: 5px;
+        color: #fff;
+    }
+
+    .dk-footer-box-info .footer-social-link a i.fa-facebook {
+        background-color: #3B5998;
+    }
+
+    .dk-footer-box-info .footer-social-link a i.fa-twitter {
+        background-color: #55ACEE;
+    }
+
+    .dk-footer-box-info .footer-social-link a i.fa-google-plus {
+        background-color: #DD4B39;
+    }
+
+    .dk-footer-box-info .footer-social-link a i.fa-linkedin {
+        background-color: #0976B4;
+    }
+
+    .dk-footer-box-info .footer-social-link a i.fa-instagram {
+        background-color: #B7242A;
+    }
+
+    .footer-awarad {
+        margin-top: 285px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .footer-awarad p {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        margin-left: 20px;
+        padding-top: 15px;
+    }
+
+    .footer-info-text {
+        margin: 26px 0 32px;
+    }
+
+    .footer-left-widget {
+        padding-left: 80px;
+    }
+
+    .footer-widget .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .footer-widget h3 {
+        font-size: 24px;
+        color: #fff;
+        position: relative;
+        margin-bottom: 15px;
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+    }
+
+    .footer-widget ul {
+        width: 50%;
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-widget li {
+        margin-bottom: 18px;
+    }
+
+    .footer-widget p {
+        margin-bottom: 27px;
+    }
+
+    .footer-widget a {
+        color: #878787;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .footer-widget a:hover {
+        color: #007bff;
+    }
+
+    .footer-widget:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .dk-footer-form {
+        position: relative;
+    }
+
+    .dk-footer-form input[type=email] {
+        padding: 14px 28px;
+        border-radius: 50px;
+        background: #2E2E2E;
+        border: 1px solid #2E2E2E;
+    }
+
+    .dk-footer-form input::-webkit-input-placeholder,
+    .dk-footer-form input::-moz-placeholder,
+    .dk-footer-form input:-ms-input-placeholder,
+    .dk-footer-form input::-ms-input-placeholder,
+    .dk-footer-form input::-webkit-input-placeholder {
+        color: #878787;
+        font-size: 14px;
+    }
+
+    .dk-footer-form input::-webkit-input-placeholder,
+    .dk-footer-form input::-moz-placeholder,
+    .dk-footer-form input:-ms-input-placeholder,
+    .dk-footer-form input::-ms-input-placeholder,
+    .dk-footer-form input::placeholder {
+        color: #878787;
+        font-size: 14px;
+    }
+
+    .dk-footer-form button[type=submit] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 12px 24px 12px 17px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 1px solid #007bff;
+        background: #007bff;
+        color: #fff;
+    }
+
+    .dk-footer-form button:hover {
+        cursor: pointer;
+    }
+
+    /* ==========================
+
+    Contact
+
+=============================*/
+    .contact-us {
+        position: relative;
+        z-index: 2;
+        margin-top: 65px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .contact-icon {
+        position: absolute;
+    }
+
+    .contact-icon i {
+        font-size: 36px;
+        top: -5px;
+        position: relative;
+        color: #007bff;
+    }
+
+    .contact-info {
+        margin-left: 75px;
+        color: #fff;
+    }
+
+    .contact-info h3 {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    .copyright {
+        padding: 28px 0;
+        margin-top: 55px;
+        background-color: #202020;
+    }
+
+    .copyright span,
+    .copyright a {
+        color: #878787;
+        -webkit-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+
+    .copyright a:hover {
+        color: #007bff;
+    }
+
+    .copyright-menu ul {
+        text-align: right;
+        margin: 0;
+    }
+
+    .copyright-menu li {
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+    .back-to-top {
+        position: relative;
+        z-index: 2;
+    }
+
+    .back-to-top .btn-dark {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        padding: 0;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #2e2e2e;
+        border-color: #2e2e2e;
+        display: none;
+        z-index: 999;
+        -webkit-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+
+    .back-to-top .btn-dark:hover {
+        cursor: pointer;
+        background: #FA6742;
+        border-color: #FA6742;
+    }
+
     /* Mobile View */
     @media only screen and (max-width: 600px) {
+        .footer-left-widget {
+            /* width: 70%; */
+            text-align: center;
+            margin: auto;
+        }
+        .section-heading-2 {
+            width: 70%;
+            margin:auto;
+        }
+        .dk-footer-box-info {
+            width: 100%;
+        }
+        .dk-footer-container {
+            flex-direction:column;
+        }
+        .dk-footer .contact-us.contact-us-last {
+            margin: auto;
+        }
+        .dk-footer-top{
+            position: relative;
+        }
+        .dk-footer {
+            align-items: center;
+            margin: auto;
+        }
         h6 {
             font-size: 13px;
         }
@@ -1193,27 +1804,29 @@
         .forex-social-trade div {
             margin: auto;
         }
-
+        .forex-plan {
+            height: 1200px;
+        }
         .forex-plan-inner {
             flex-direction: column;
-            height: 500px;
+            height: 550px;
         }
 
         .forex-plan-left,
         .forex-plan-right {
             margin: auto;
             width: 90%;
+            height: 250px;
         }
 
         .forex-plan-top {
             height: 60px;
-
         }
 
         .forex-plan-bottom {
             width: 90%;
             height: 250px;
-
+            margin-bottom: 100px;
         }
 
         .forex-plan-bottom p {
@@ -1222,6 +1835,7 @@
 
         .forex-plan-bottom .forex-plan-top-right span {
             font-size: 19px;
+            
         }
 
         .forex-plan-bottom .forex-plan-top {
@@ -1237,11 +1851,11 @@
         }
 
         .forex-plan-left .forex-plan-top-right-span {
-            font-size: 25px;
+            font-size: 22px;
         }
 
         .forex-plan-right .forex-plan-top-right-span {
-            font-size: 25px;
+            font-size: 22px;
         }
 
         /* .forex-plan-bottom .forex-plan-top-left{
@@ -1249,7 +1863,7 @@
         width: 50%;
     } */
         .forex-plan-top-left {
-            width: 50%;
+            width: 12%;
         }
 
         .forex-footer-bottom {
@@ -1317,5 +1931,15 @@
         .text-box h4 {
             color: white;
         }
+
+        /* .copyright-bottom-left {
+            border: 1px solid red;
+            width: 100%;
+            margin: auto;
+            font-size: 15px;
+        }
+        .copyright-bottom-left span {
+            color: red;
+        } */
     }
 </style>
